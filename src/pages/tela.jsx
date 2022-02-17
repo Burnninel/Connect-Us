@@ -1,21 +1,14 @@
-import Header from "../components/header";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Inputs from "../components/Input";
-import Titulo from "../components/titulo";
+import Layout from "../components/Layout";
 
 export default function Home() {
     return (
-        <div className={`flex h-screen w-screen bg-black`}>
-            <div>
-                <Header />
-                <Sidebar />
-            </div>
-            <div className="pt-24 ml-14">
-                <div>
-                    <Titulo titulo="Editar conector de Banco de Dados - Saída" />
-                </div>
-                <div className="bg-white"></div>
-            </div>
+        <div className={`flex h-screen`}>
+            <Layout titulo="Editor de conector de Banco de Dados - Entrada">
+                <Inputs />            
+            </Layout>
         </div>
     )
 }

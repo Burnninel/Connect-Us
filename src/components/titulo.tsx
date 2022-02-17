@@ -1,5 +1,5 @@
 interface TituloProps {
-    titulo: string
+    titulo: string,
 }
 
 export default function Titulo(props: TituloProps) {

@@ -15,3 +15,7 @@ a {
   box-sizing: border-box;
   font-family: 'Segoe UI',sans-serif;
 }
+
+.image {
+  background-image: url(../../public/images/sysmiddle.png)
+}

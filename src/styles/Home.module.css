@@ -114,3 +114,7 @@
     flex-direction: column;
   }
 }
+
+.image {
+  background-image: url();
+}
