@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconSideBar } from "./icons";
+import { IconSideBar, IconUSer } from "./icons";
 import logo from "../../public/images/sysmiddle-logo.png"
 
 export default function Header() {
@@ -11,9 +11,12 @@ export default function Header() {
                     <span className="pl-2">Menu</span>
                 </div>  
                 <div className="flex justify-center w-full">
-                    <div className={`w-48 mt-1 mr-32`}>
+                    <div className={`w-48 mt-1 mr-28`}>
                         <Image src={logo} alt="Logo sysmiddle" />
                     </div>  
+                </div>
+                <div className="pr-10">
+                    {IconUSer}
                 </div>
                 {/* <h2 className={`text-white pl-3`}>Connect Us</h2>        */}
             </div>

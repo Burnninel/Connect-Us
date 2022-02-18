@@ -1,7 +1,7 @@
 interface PropsButton {
     nome: string,
     cor: string,
-    click: () => void
+    click?: () => void
 }
 
 export default function Buttons(props: PropsButton) {

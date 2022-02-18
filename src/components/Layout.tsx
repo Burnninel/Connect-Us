@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import Titulo from "./titulo"
+import Titulo from "./Titulo"
 import Subtitulo from "./Subtitulo"
 import Botoes from "./Botoes";
 import Tabela from "./Tabela";

@@ -1,11 +1,8 @@
-// import { IconProject } from "./icons";
 import Menu from "./Menus";
 import { IconFolder, IconMyProject, IconProject } from "./icons";
 
 export default function Sidebar() {
     const projetos = ['sysmiddle']
-    // const letraProjetos = projetos.map(index => index[0]);
-    // const icon = <div className={`flex justify-center h-8 w-8 rounded-lg font-semibold text-xl bg-gray-300`}>{letraProjetos}</div>
 
     return (
         <div className={` h-full w-64 pt-20 text-white bg-gray-50 border-2`}>
@@ -24,4 +21,3 @@ export default function Sidebar() {
         </div>
     )
 }
-
