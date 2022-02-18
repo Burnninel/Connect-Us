@@ -2,15 +2,17 @@
 import { useState } from "react";
 import { IconConnetor, IconData, IconDice, IconDown, IconFlag, IconFolder, IconImp, IconMap, IconProject, IconProjetos, IconUp } from "./icons";
 import Submenu from "./Submenu";
-
 interface MenusProps {
     nome: string
 }
 
 export default function Dropdowns(props: MenusProps) {
+    const [expandir, setExpandir] = useState({})
+    const exibir = () => setExpandir(<Submenu titulo={""} icon={undefined} url={""} />)
+
     return (
         <>
-            <ul className={`w-full border-bottom mb-2 cursor-pointer`} onClick={() => console.log('Clicou')}>
+            <ul className={`w-full border-bottom mb-2 cursor-pointer`} onClick={() => exibir}>
                 <li className={`flex items-center h-7 pt-2 pl-1 pr-2`}>
                     <div className={`flex `}>
                         {IconFolder}

@@ -8,8 +8,8 @@ export default function Sidebar() {
     // const icon = <div className={`flex justify-center h-8 w-8 rounded-lg font-semibold text-xl bg-gray-300`}>{letraProjetos}</div>
 
     return (
-        <div className={` h-full w-64 pt-16 text-white bg-gray-50 border-2`}>
-            <ul className={`cursor-pointer hover:bg-gray-100 border-bottom mb-2`}>
+        <div className={` h-full w-64 pt-20 text-white bg-gray-50 border-2`}>
+            <ul className={`cursor-pointer hover:text-blue-500 hover:bg-gray-100 border-bottom mb-2`}>
                 <li className={`flex justify-start items-center p-2 mb-2 mr-5`}>
                     <div className={`flex`}>
                         {IconMyProject}
