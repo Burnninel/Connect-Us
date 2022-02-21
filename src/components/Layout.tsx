@@ -1,17 +1,13 @@
-import Header from "./Header";
 import Sidebar from "./Sidebar";
-import Titulo from "./Titulo"
-import Subtitulo from "./Subtitulo"
+import Titulo from "./titulo"
 import Botoes from "./Botoes";
 import Tabela from "./Tabela";
-import Footer from "./Footer";
 
 export default function Layout() {
     return (
         <>
-            <Header />
             <Sidebar />
-            <div className={`w-screen mt-8 p-20`}>
+            <div className={`w-screen mt-8 p-16`}>
                 <Titulo titulo="Editor de conector de Banco de Dados - Entrada"/>
                 <div className="mt-4">
                     <div>

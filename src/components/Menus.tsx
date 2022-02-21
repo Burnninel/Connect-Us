@@ -4,11 +4,7 @@ import { IconConnetor, IconData, IconDice, IconDown, IconFlag, IconFolder, IconI
 import Submenu from "./Submenu";
 import useCollapse from 'react-collapsed'
 
-interface MenusProps {
-    nome: string
-}
-
-export default function Dropdowns(props: MenusProps) {
+export default function Dropdowns() {
     const [defaultExpanded, setExpanded] = useState(false)
     const { getCollapseProps, getToggleProps } = useCollapse({ defaultExpanded: true })
 

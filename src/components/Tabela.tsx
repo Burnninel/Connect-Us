@@ -21,15 +21,15 @@ export default function Tabela() {
                         Adicionar Mapeador
                     </button>
                     <Modal centered enforceFocus={true} show={show} onHide={handleClose}>
-                        <Modal.Header closeButton className="text-sm font-medium p-2 mr-2"><span className="text-lg">Edição de Mapeador</span></Modal.Header>
+                        <Modal.Header closeButton className="text-sm font-medium px-3 py-2 "><span className="text-lg">Edição de Mapeador</span></Modal.Header>
                         <Modal.Body className={`border-none`}>
                             <Buttons nome="Diretório de Captura" cor="w-full bg-gray-50 text-sky-500 border-1 border-sky-500 mb-2 hover:bg-sky-400 hover:text-gray-50" click={handleClose} />
-                            <div className="flex flex-row item-center w-full h-8 ml-4 mb-1 text-gray-600">
-                                <div className="w-full mr-2">
+                            <div className="flex flex-row item-center w-full h-8 mb-1 text-gray-600">
+                                <div className="w-full">
                                     <input type="checkbox" className={`mr-2 accent-sky-400 checked:bg-gray-50`} />
                                     <label className="text-sm font-normal ">Configurado</label>
                                 </div>
-                                <div className="w-full">
+                                <div className="w-full pr-14">
                                     <input type="checkbox" className="mr-2 accent-sky-400 checked:bg-gray-50" />
                                     <label className="text-sm checked:text-white">Reempilhar Processamento</label>
                                 </div>
@@ -59,13 +59,13 @@ export default function Tabela() {
                             </div>
                         </Modal.Body>
                         <div className={`flex flex-row-reverse mr-4 border-bottom pb-3`}>
-                            <Buttons nome="Remover" cor="bg-gray-200 text-black" click={handleClose} />
-                            <Buttons nome="Abrir" cor="bg-sky-500 text-gray-100 mr-2" click={handleClose} />
-                            <Buttons nome="Novo" cor="bg-sky-500 text-gray-100 mr-3" click={handleClose} />
+                            <Buttons nome="Remover" cor="bg-gray-200 text-gray-800" click={handleClose} />
+                            <Buttons nome="Abrir" cor="bg-sky-500 text-gray-100 mr-2 hover:bg-sky-600" />
+                            <Buttons nome="Novo" cor="bg-sky-500 text-gray-100 mr-3 hover:bg-sky-600"  />
                         </div>
                         <div className={`flex flex-row-reverse m-3 border-none`}>
-                            <Buttons nome="Salvar" cor="bg-sky-500 text-gray-100" click={handleClose} />
-                            <Buttons nome="Cancelar" cor="bg-gray-200 text-black mr-3" click={handleClose} />
+                            <Buttons nome="Cancelar" cor="bg-gray-200 hover:bg-gray-300 text-gray-800" click={handleClose} />
+                            <Buttons nome="Salvar" cor="bg-sky-500 text-gray-100 hover:bg-sky-600 mr-3" />
                         </div>
                     </Modal>
                 </div>
